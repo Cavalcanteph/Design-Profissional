@@ -1,88 +1,192 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Carreira TI - Certificações Profissionais</title>
-    <style>
-        body {
-        font-family: Arial, sans-serif;
-        line-height:1.6; 
-        margin: 0;
-        padding: 0;
-        background: #f4f4f9;
-        color: #333;
+  <meta charset="UTF-8">
+  <title>Carreira TI - Certificações Profissionais</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ header {
+            background-image: url(https://media.istockphoto.com/id/1420977338/pt/vetorial/technology-background-with-hi-tech-digital-data.jpg?s=1024x1024&w=is&k=20&c=Tr31j7ITfQP9Xuab_gnj0ykQqJcswLJPzI1-IlWtjkU=);
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
-        header {
-        background-image: url(https://media.istockphoto.com/id/1420977338/pt/vetorial/technology-background-with-hi-tech-digital-data.jpg?s=1024x1024&w=is&k=20&c=Tr31j7ITfQP9Xuab_gnj0ykQqJcswLJPzI1-IlWtjkU=);
-        background-size: cover;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        }
-        h1, h2, h3 {
-        margin-bottom: 10px;
-        }
-        section {
-        padding: 20px;
-         max-width: 1000px;
-        margin: auto;
-        }
-        table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
-        }
-        table, th, td {
-        border: 1px solid #ccc;
-        }
-        th, td {
-        padding: 12px;
-        text-align: left;
-        }
-        th {
-        background: #1a73e8;
-        color: #fff;
-        }
-        a {
-        color: #1a73e8;
-        text-decoration: none;
-        }
-        a:hover {
-        text-decoration: underline;
-        }
-        footer {
-        background: #1a73e8;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-        margin-top: 20px;
-        }
-    </style>
-</head>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      background: #f7f9fc;
+      color: #333;
+    }
 
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #1a73e8;
+    }
+
+    h1, h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .meu-texto {
+      border-left: 4px solid #1a73e8;
+      background: #eef4ff;
+      padding: 12px 18px;
+      border-radius: 8px;
+      margin: 15px auto;
+      max-width: 850px;
+      font-size: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    table, th, td {
+      border: 1px solid #e1e1e1;
+    }
+
+    th, td {
+      padding: 12px;
+    }
+
+    th {
+      background: #1a73e8;
+      color: #fff;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background: #f4f8ff;
+    }
+
+    tr:hover {
+      background: #e8f0fe;
+      transition: 0.3s;
+    }
+
+    a {
+      color: #1a73e8;
+      font-weight: 600;
+    }
+    a:hover {
+      color: #005bb5;
+      text-decoration: underline;
+    }
+
+    ol, ul {
+      margin: 20px auto;
+      max-width: 850px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #1a73e8;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+
+    footer span {
+      color: #ffd54f;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-<header>
+  <header>
     <h1>Carreira TI</h1>
     <p>Certificações Profissionais em 2025</p>
-</header>
+  </header>
 
-<section>
-    <h2>As 8 Certificações mais Valorizadas em 2025</h2>
-    <ol>
+  <div class="container">
+    <div class="card">
+      <h1>Critérios que tornam uma certificação valorizada em TI</h1>
+      <p class="meu-texto">
+        A tabela resume os fatores que tornam certificações em Tecnologia da Informação valorizadas no mercado de trabalho.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Critério</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Exigência em vagas</strong></td>
+            <td>Empregadores citam essa certificação nas descrições de vaga, tornando-a vantagem competitiva direta para quem busca emprego ou mudança de carreira.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section class="card">
+      <h2>As 8 Certificações mais Valorizadas em 2025</h2>
+      <ol>
         <li><a href="https://aws.amazon.com/certification/" target="_blank">AWS Certified Solutions Architect</a></li>
         <li><a href="https://learn.microsoft.com/en-us/certifications/" target="_blank">Microsoft Certified: Azure Solutions Architect Expert</a></li>
         <li><a href="https://www.comptia.org/certifications/security" target="_blank">CompTIA Security+</a></li>
-        <li><a href="https://www.isc2.org/Certifications/CISSP" target="_blank">CISSP (Certified Information Systems Security Professional)</a></li>
-        <li><a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">PMP (Project Management Professional)</a></li>
+        <li><a href="https://www.isc2.org/Certifications/CISSP" target="_blank">CISSP</a></li>
+        <li><a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">PMP</a></li>
         <li><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html" target="_blank">Cisco CCNA</a></li>
         <li><a href="https://www.credly.com/org/google-cloud/badge/cloud-digital-leader" target="_blank">Google Cloud Digital Leader</a></li>
-        <li><a href="https://toefltest.ets.org/" target="_blank">TOEFL iBT (para profissionais internacionais)</a></li>
-    </ol>
-</section>
+        <li><a href="https://toefltest.ets.org/" target="_blank">TOEFL iBT</a></li>
+      </ol>
+    </section>
 
-<section>
-    <h2>Perfil Profissional Ideal</h2>
-    <ul>
+    <section class="card">
+      <h2>Perfil Profissional Ideal</h2>
+      <ul>
         <li><strong>AWS Solutions Architect:</strong> Profissionais focados em arquitetura de sistemas em nuvem.</li>
         <li><strong>Azure Solutions Architect:</strong> Especialistas em soluções empresariais Microsoft.</li>
         <li><strong>CompTIA Security+:</strong> Iniciantes e intermediários em segurança cibernética.</li>
@@ -91,65 +195,83 @@
         <li><strong>Cisco CCNA:</strong> Administradores de redes e infraestrutura.</li>
         <li><strong>Google Cloud Digital Leader:</strong> Profissionais que desejam entender fundamentos de cloud.</li>
         <li><strong>TOEFL iBT:</strong> Profissionais que buscam oportunidades internacionais.</li>
-    </ul>
-</section>
+      </ul>
+    </section>
 
-<section>
-    <h2>Tabela Comparativa</h2>
-    <table>
+    <section class="card">
+      <h2>Tabela Comparativa</h2>
+      <table>
         <tr>
-            <th>Certificação</th>
-            <th>Custo Médio</th>
-            <th>Formato</th>
-            <th>Idiomas</th>
-            <th>Link Oficial</th>
+          <th>Certificação</th>
+          <th>Custo Médio</th>
+          <th>Formato</th>
+          <th>Idiomas</th>
+          <th>Link Oficial</th>
         </tr>
         <tr>
-            <td>AWS Solutions Architect</td>
-            <td>US$ 150 | R$ 800 </td>
-            <td>Online/Presencial</td>
-            <td>Inglês, Português</td>
-            <td><a href="https://aws.amazon.com/certification/">AWS</a></td>
+          <td>AWS Solutions Architect</td>
+          <td>US$ 150 | R$ 800</td>
+          <td>Online/Presencial</td>
+          <td>Inglês, Português</td>
+          <td><a href="https://aws.amazon.com/certification/">AWS</a></td>
         </tr>
         <tr>
-            <td>Azure Solutions Architect</td>
-            <td>US$ 165 | R$ 882,93</td>
-            <td>Online/Presencial</td>
-            <td>Inglês, Português</td>
-            <td><a href="https://learn.microsoft.com/en-us/certifications/">Microsoft</a></td>
+          <td>Azure Solutions Architect</td>
+          <td>US$ 165 | R$ 882,93</td>
+          <td>Online/Presencial</td>
+          <td>Inglês, Português</td>
+          <td><a href="https://learn.microsoft.com/en-us/certifications/">Microsoft</a></td>
         </tr>
         <tr>
-            <td>CompTIA Security+</td>
-            <td>US$ 370 | R$ 1979,91</td>
-            <td>Online/Presencial</td>
-            <td>Inglês, outros</td>
-            <td><a href="https://www.comptia.org/certifications/security">CompTIA</a></td>
+          <td>CompTIA Security+</td>
+          <td>US$ 370 | R$ 1979,91</td>
+          <td>Online/Presencial</td>
+          <td>Inglês, outros</td>
+          <td><a href="https://www.comptia.org/certifications/security">CompTIA</a></td>
         </tr>
         <tr>
-            <td>CISSP</td>
-            <td>US$ 749 | R$ 4007,97</td>
-            <td>Online/Presencial</td>
-            <td>Inglês, Espanhol, outros</td>
-            <td><a href="https://www.isc2.org/Certifications/CISSP">ISC2</a></td>
+          <td>CISSP</td>
+          <td>US$ 749 | R$ 4007,97</td>
+          <td>Online/Presencial</td>
+          <td>Inglês, Espanhol, outros</td>
+          <td><a href="https://www.isc2.org/Certifications/CISSP">ISC2</a></td>
         </tr>
         <tr>
-            <td>PMP</td>
-            <td>US$ 555 | R$ 2969,86</td>
-            <td>Online/Presencial</td>
-            <td>Inglês, Português</td>
-            <td><a href="https://www.pmi.org/certifications/project-management-pmp">PMI</a></td>
+          <td>PMP</td>
+          <td>US$ 555 | R$ 2969,86</td>
+          <td>Online/Presencial</td>
+          <td>Inglês, Português</td>
+          <td><a href="https://www.pmi.org/certifications/project-management-pmp">PMI</a></td>
         </tr>
-    </table>
-</section>
+      </table>
+    </section>
 
-<section>
-    <h2>Certificações e Aprendizado Contínuo</h2>
-    <p>As certificações em TI não são apenas conquistas pontuais, mas marcos dentro de uma jornada de aprendizado contínuo. Elas validam competências técnicas e estratégicas, ao mesmo tempo em que impulsionam a evolução profissional em um mercado dinâmico. Manter-se certificado significa acompanhar novas tecnologias, tendências e metodologias, garantindo relevância e empregabilidade a longo prazo.</p>
-</section>
+    <section class="card">
+      <h2>Certificações e Aprendizado Contínuo</h2>
+      <p>
+        As certificações em TI não são apenas conquistas pontuais, mas marcos dentro de uma jornada de aprendizado contínuo. Elas validam competências técnicas e estratégicas, ao mesmo tempo em que impulsionam a evolução profissional em um mercado dinâmico. Manter-se certificado significa acompanhar novas tecnologias, tendências e metodologias, garantindo relevância e empregabilidade a longo prazo.
+      </p>
+    </section>
 
-<footer>
+    <section class="card"> 
+      <h2>🌍 Situação no Brasil</h2>
+      <p class="meu-texto">
+        Certificações em cloud (AWS, Azure, Google Cloud) têm sido bastante valorizadas, conforme empresas fazem migração ou expansões na nuvem. 
+      </p>
+      <p class="meu-texto">
+        Certificações de projeto / gestão como PMP também aparecem como diferenciadoras nas vagas de gerente de projetos / coordenação. 
+      </p>
+      <p class="meu-texto">
+        Em segurança da informação, há forte demanda, especialmente no contexto de LGPD, privacidade de dados, compliance e risco. Certificações como CISSP, CISM, CISA têm bom reconhecimento. 
+      </p>
+    </section>
+  </div>
+
+  <footer>
     <p>&copy; 2025 Carreira TI - Trabalho de Design Profissional.</p>
-</footer>
-
+    Criado por <span>Thiago Noronha</span>, <span>Pedro Cavalcante</span> e <span>Pedro de Alcantara</span> <br>
+    <span>(Equipe UDF)</span>
+  </footer>
 </body>
 </html>
+
